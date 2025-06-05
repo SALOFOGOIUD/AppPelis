@@ -1,0 +1,58 @@
+/* Estilo general del contenedor */
+.panel-principal-container {
+  padding: 2rem;
+  color: white;
+  min-height: 70vh;
+  text-align: center;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  height: auto;
+}
+
+/* Título y descripción */
+.panel-titulo {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.panel-descripcion {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+/* Grid de tarjetas */
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  justify-items: center;
+}
+
+/* Estilo individual de la card */
+.card {
+  background-color: #ffffff10;
+  border: 1px solid #ffffff30;
+  border-radius: 15px;
+  padding: 1.5rem;
+  width: 100%;
+  max-width: 260px;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.3s;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+  backdrop-filter: blur(6px);
+}
+
+.card:hover {
+  transform: scale(1.05);
+  background-color: #ffffff20;
+}
+
+.card h2 {
+  margin-top: 0.8rem;
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+/* Ícono en la card */
+.icono {
+  font-size: 3rem;
+}

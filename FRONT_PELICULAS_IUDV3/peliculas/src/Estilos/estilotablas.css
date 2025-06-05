@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+}
+
+.container {
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.navbar {
+  background-color: #1f2937;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.titilos{
+  display: flex;
+  padding-top: 1rem;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+
+.navbar h1 {
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.content {
+  width: 100%;
+  background: #ffffff;
+  padding: 15px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tabla-container {
+  width: 100%;
+  max-height: 600px;
+  overflow: auto;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+}
+
+.tabla {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tabla th {
+  background-color: #f3f4f6;
+  color: #374151;
+  padding: 6px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-align: center;
+  position: sticky;
+  z-index: 5;
+}
+
+.tabla td {
+  padding: 6px;
+  border-bottom: 1px solid #e5e7eb;
+  text-align: center;
+  font-size: 0.95rem;
+  color: #1f2937;
+}
+
+.tabla tr:nth-child(even) {
+  background-color: #f9fafb;
+}
+
+.estado {
+  padding: 6px 14px;
+  border-radius: 9999px;
+  font-weight: 600;
+  font-size: 0.875rem;
+}
+
+.activo {
+  background-color: #10b981;
+  color: white;
+}
+
+.inactivo {
+  background-color: #ef4444;
+  color: white;
+}
+
+.btn-agregar {
+  background-color: #10b981;
+  color: white;
+  font-size: 14px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+  margin-left: 2rem;
+}
+
+.btn-agregar:hover {
+  background-color: #059669;
+}
+
+.btns-acciones {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.btn-actualizar {
+  background-color: #f59e0b;
+  color: white;
+}
+
+.btn-eliminar {
+  background-color: #ef4444;
+  color: white;
+}
+
+.btn-actualizar,
+.btn-eliminar {
+  border: none;
+  padding: 5px 15px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  margin: 5px;
+}
+
+.btn-actualizar:hover {
+  background-color: #d97706;
+}
+
+.btn-eliminar:hover {
+  background-color: #b91c1c;
+}
+
+.footer {
+  width: 100%;
+  background-color: #1f2937;
+  color: #d1d5db;
+  text-align: center;
+  font-size: 0.95rem;
+}
